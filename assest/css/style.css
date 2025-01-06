@@ -885,7 +885,7 @@ nav ul li a:hover {
 .image {
   position: relative;
   margin-bottom: 20px;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .image img {
   height: auto;
@@ -894,7 +894,7 @@ nav ul li a:hover {
 
 .overlay_image_text {
   position: absolute;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
   top: 0%;
   left: 0%;
   height: 100%;
@@ -1114,12 +1114,11 @@ nav ul li a:hover {
 }
 
 .contact_bg {
-  background-color: #ffffff;
+  background-color: #f2f7fa;
   padding:4.5rem 0;
   position: relative;
 }
 
-.Exclusive_bg,
 .con_bg{
   background-image: url(../images/contact_bg.png);
   background-position: center center;
