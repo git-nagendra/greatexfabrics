@@ -138,3 +138,40 @@ window.addEventListener("scroll", function () {
 //       behavior: 'smooth'
 //     });
 //   }
+
+document.getElementById("toggleButton").addEventListener("click", function() {
+  document.getElementById("myElement").classList.toggle("share");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let slider = document.querySelector(".logo-slider");
+  let slide = document.querySelector(".logos-slide");
+
+  // Duplicate the logos-slide content dynamically
+  let duplicate = slide.cloneNode(true);
+  slider.appendChild(duplicate);
+});
+
+
+/*
+ JS to toggle scroll axis styles
+*/
+// const control = document.getElementById("direction-toggle");
+// const marquees = document.querySelectorAll(".marquee");
+// const wrapper = document.querySelector(".wrapper");
+
+// control.addEventListener("click", () => {
+//   control.classList.toggle("toggle--vertical");
+//   wrapper.classList.toggle("wrapper--vertical");
+//   [...marquees].forEach((marquee) =>
+//     marquee.classList.toggle("marquee--vertical")
+//   );
+// });
+
+function openModal() {
+  document.getElementById('imageModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
