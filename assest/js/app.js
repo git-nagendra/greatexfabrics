@@ -171,3 +171,23 @@ if (downloadBtn) {
     document.body.removeChild(link);
   });
 }
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var menuLink = document.querySelector('.menu_wrapper > a');
+
+//   menuLink.addEventListener('click', function(event) {
+//     event.preventDefault(); // Stop link from navigating
+
+//     var menuWrapper = this.parentElement; // <li class="menu_wrapper">
+//     var submenuWrapper = menuWrapper.querySelector('.submenu_wrapper');
+
+//     menuWrapper.classList.toggle('active');
+
+//     if (submenuWrapper.style.display === 'block') {
+//       submenuWrapper.style.display = 'none';
+//     } else {
+//       submenuWrapper.style.display = 'block';
+//     }
+//   });
+// });

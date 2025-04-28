@@ -144,9 +144,7 @@ nav ul li a:hover {
   color: #fa4032;
 }
 
-.for_padding {
-  padding: 30px 0;
-}
+
 .submenu_wrapper {
   position: absolute;
   left: 80px;
@@ -1628,13 +1626,13 @@ padding: 5rem 0;
     top: 0;
     left: -100%;
     z-index: 999;
-    width: 75%;
+    width: 80%;
     height: 100vh;
-    background: #02173b;
-    padding: 15px 20px;
+    padding:0 9px;
     transition: 0.6s ease-in-out;
     z-index: 99;
-    overflow-y: scroll;
+    overflow-Y: scroll;
+    background: #01003d;
   }
  
   .menu_wrapper .active {
@@ -1647,11 +1645,12 @@ padding: 5rem 0;
     width: 280px;
     gap: 0 !important;
   }
+  .mobile_none,
   .sub_menu_heading {
     display: none !important;
   }
 
-  /* .submenu_wrapper {
+  .submenu_wrapper {
     position: initial;
     top: 56px;
     left: -5px;
@@ -1664,8 +1663,9 @@ padding: 5rem 0;
     visibility: initial;
     flex-direction: column;
     display: none;
-    background: initial;
-  } */
+    background: #01003d !important;
+    border-radius: initial;
+  }
  
   .Shoe{
     width: 100% !important; 
@@ -1739,17 +1739,18 @@ padding: 5rem 0;
 .elementor-widget-container h6 {
   margin-top: 34px;
 }
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  object-fit: initial !important;
-  height: 29vh !important;
-}
+
 }
 @media only screen and (max-width: 558px) {
   .text_wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: initial !important;
+    height: 29vh !important;
   }
   .Trusted_bg {
     padding: 2rem 0;
