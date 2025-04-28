@@ -6,7 +6,14 @@
     <title>greatexfabrics</title>
     <!-- style css -->
     <link rel="stylesheet" href="./assest/css/style.css" />
+    <link rel="stylesheet" href="./assest/css/slider.css" />
     <!-- bootstrap cdn -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assest/images/fab-icon/favicon.svg"
+      sizes="96x96"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -29,37 +36,38 @@
         <div class="container-fluid">
           <div class="row">
             <div
-              class="col-sm-12 col-md-4 d-flex ps-sm-3 ps-3 px-sm-4 px-2"
-              style="background-color: var(--red); padding: 10px 0"
+              class="col-sm-12 col-md-4 d-flex align-items-center ps-sm-3 ps-3 px-sm-4 px-2"
+              style="background-color: var(--red); padding: 7px 0"
             >
-              <a href="" class="ms-sm-3 ms-2 Phone_style">
+              <a
+                href="https://wa.me/9220104048?text=Hello%20there!"
+                class="ms-sm-3 ms-2 Phone_style"
+              >
                 <span
                   ><i class="fa-solid fa-phone me-1"></i> Call Us
-                  +917523812223</span
+                  +919220104048</span
                 >
               </a>
             </div>
             <div
               class="col-sm-12 col-md-8 d-flex justify-content-md-end justify-content-start ps-md-1 ps-4 pe-sm-5 pe-3"
-              style="background-color: var(--black-bg); padding: 10px 0"
+              style="background-color: var(--black-bg); padding: 7px 0"
             >
               <div class="login_wrapper">
-                <ul class="d-flex justify-content-center align-items-center">
-                  <li>
-                    <a href="#">
-                      <span
-                        ><i class="fa-solid fa-right-to-bracket me-2"></i></span
-                      >Login</a
-                    >
-                  </li>
-                  <li><a href="#">Sign Up</a></li>
-                </ul>
+                <div
+                  class="send_mail d-flex align-items-center justify-content-center"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mailModal"
+                >
+                  <i class="fa-solid fa-envelope"></i
+                  ><span class="ms-1"> Send Email</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header py-3">
+      <div class="header">
         <div class="px-3 for_pc_none">
           <a href="index.html">
             <div class="logo">
@@ -88,11 +96,101 @@
               </a>
             </li>
             <li class="menu_wrapper">
-              <a href="#" class="for_padding"
+              <a href="product.html" class="for_padding"
                 >Product <span><i class="fa-solid fa-angle-down"></i></span
               ></a>
-              <div class="submenu_wrapper">
-                <div class="submenu_inn">
+              <div class="submenu_wrapper g-4 row">
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Shoe Fabric</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html">Shoe Fabric 421 </a>
+                    </li>
+                    <li class=""><a href="#">Shoe Fabric 412C</a></li>
+                    <li><a href="">Shoe Fabric 411</a></li>
+                    <li class=""><a href="#">Shoe Fabric 220A</a></li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Knitted Fabric</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html">Knitted Mesh Fabric</a>
+                    </li>
+                    <li class=""><a href="#">Knitted Bag Fabric</a></li>
+                    <li>
+                      <a href="Product-Category.html"
+                        >Knitted Fabric For Lower</a
+                      >
+                    </li>
+                    <li class=""><a href="#">Hosiery Knitted Fabric</a></li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>CIRCULAR FABRIC</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html"
+                        >CIRCULAR FABRIC BOX GRID</a
+                      >
+                    </li>
+                    <li class=""><a href="#">CIRCULAR FABRIC DNO-16</a></li>
+                    <li>
+                      <a href="Product-Category.html">CIRCULAR FABRIC 488</a>
+                    </li>
+                    <li class=""><a href="#">CIRCULAR FABRIC 434</a></li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Net Fabric</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html">Nylon Power Net Fabric</a>
+                    </li>
+                    <li class="">
+                      <a href="#">MESH FABRIC GARMENTS ATLAS NET</a>
+                    </li>
+                    <li>
+                      <a href="Product-Category.html"
+                        >TRIM MESH FABRIC Maharani Net Fabric</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="#">TRIM MESH FABRIC Power Net Heavy</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Sportswear Fabric</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html">Sportswear Fabric</a>
+                    </li>
+                    <li class=""><a href="#">Sportswear Fabric</a></li>
+                    <li><a href="">Warp Knit Fabric</a></li>
+                    <li class="">
+                      <a href="#">SPORTS WEAR KNITTED FABRIC RICE KNIT</a>
+                    </li>
+                    <li class="">
+                      <a href="#">MESH SPORTS WEAR FABRIC KH-FULL MESH</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Mesh Fabric</h6>
+                  <ul class="">
+                    <li class="">
+                      <a href="Product-Details.html">AIRMESH FABRIC 180 GSM</a>
+                    </li>
+                    <li class=""><a href="#">AIRMESH FABRIC 180 GSM</a></li>
+                    <li><a href="">MESH SPORTS WEAR FABRIC 316</a></li>
+                    <li class="">
+                      <a href="#">MESH SPORTS WEAR FABRIC 11BARFI B BALL</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="Shoe col-sm-12 col-md-3">
+                  <h6>Net Fabric</h6>
                   <ul class="">
                     <li class=""><a href="Product-Details.html">Fabrics</a></li>
                     <li class=""><a href="#">Chairs</a></li>
@@ -102,9 +200,18 @@
                     <li class=""><a href="#">Performance Apparel</a></li>
                   </ul>
                 </div>
+                <div
+                  class="Shoe col-sm-12 col-md-3 d-flex align-items-center justify-content-end"
+                >
+                  <div class="mega_text_card p-3 d-flex">
+                    <h6 class="m-0 p-0">
+                      Crafting Quality Knitted Fabrics for Over 50 Years.
+                    </h6>
+                  </div>
+                </div>
               </div>
             </li>
-            <li><a href="#" class="for_padding">Contact Us</a></li>
+            <li><a href="contact.html" class="for_padding">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -113,16 +220,19 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./assest/images/bannner-2mukesh.jpg" alt="" />
+            <img src="./assest/images/03.png" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assest/images/fabric1.jpg" alt="" />
+            <img src="./assest/images/banner.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assest/images/2.png" alt="" />
           </div>
           <div class="swiper-slide">
             <img src="./assest/images/Garments2 (1).jpg" alt="" />
           </div>
           <div class="swiper-slide">
-            <img src="./assest/images/Footwear.jpg" alt="" />
+            <img src="./assest/images/banner3.jpg" alt="" />
           </div>
           <div class="swiper-slide">
             <img src="./assest/images/Performance.jpg" alt="" />
@@ -131,149 +241,386 @@
       </div>
       <div class="swiper-pagination1"></div>
     </div>
-    <section class="py-5">
+    <!-- <section class="py-5">
       <div class="container" style="overflow: hidden">
         <div class="scroll_text d-flex align-items-center">
-          <h2>Fabric Manufacturers and Suppliers in India</h2>
+          <h2>Crafting Quality Knitted Fabrics for Over 50 Years</h2>
         </div>
       </div>
-    </section>
-    <section class="">
-      <div class="container pb-4 pt-2">
-        <div class="row g-4 py-5">
-          <div class="col-lg-6">
-            <h2 class="heading pb-3">
-              About Us
-              <span class="line"></span>
+    </section> -->
+    <section class="Trusted_bg_fix">
+      <div class="container pb-4 ">
+        <div class="row pt-sm-5 pt-0 py-5">
+          <div class="col-12">
+            <h2 class="heading remove_af pb-3">
+              We Offer a wide range of Products
+              <span class="line remove" ></span>
             </h2>
-            <p>
-              With more than half a century of experience and expertise in the
-              textile and fabric manufacturing, design business we have managed
-              to bring lot of innovative changes to the industry. Our only motto
-              is to produce finest material in affordable rate to our customers.
-              Our innovative mindset is the main reason why we have managed to
-              keep up with time and did not fade away like many of our
-              competitors..
-            </p>
-            <h4>We Offer a wide range of Products</h4>
-            <div class="text_wrapper">
-              <div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/money.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Febrics</p>
-                  </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/sport wear.png" alt="" />
                 </div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/ethics.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Chairs</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/document.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Garments</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/money.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Stalles</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/ethics.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Footwear</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mt-4">
-                  <div class="icon_img">
-                    <img src="./assest/images/document.png" alt="" />
-                  </div>
-                  <div class="ms-2">
-                    <p class="p-0 m-0">Performance Apparel</p>
-                  </div>
+                <div class="">
+                  <p class="p-0 m-0">Sport Wear</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-lg-6 mt-lg-0 mt-5 d-flex align-items-center justify-content-lg-center justify-content-start"
-          >
-            <img
-              src="./assest/images/company3.jpg"
-              class="rounded"
-              width="86%"
-              alt=""
-            />
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/industrial.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Apparel</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/boots_2947482.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Shoes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/office chair.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Office</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/home text.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">High Fashion Fabric</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/headwear .png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Helmet</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/luggage.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Luggage / Bag</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/fashion.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Fashion</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img p-4">
+                  <img src="./assest/images/curtains.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Curtain</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/agriculture.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Mesh fabric</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/intimate wear.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Intimate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-xl-2 col-lg-3">
+              <div
+                class="d-flex align-items-center justify-content-center flex-column mt-4"
+              >
+                <div class="icon_img">
+                  <img src="./assest/images/automative.png" alt="" />
+                </div>
+                <div class="">
+                  <p class="p-0 m-0">Technical Textile</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="Trusted_bg mt-sm-3 mt-4">
+    <section class="Categories_bg py-5">
       <div class="container">
-        <div class="Trusted_wrapper">
-          <div
-            class="Trusted_card d-flex align-items-center justify-content-center flex-column"
-            data-aos="fade-right"
-          >
-            <div class="Trusted_img">
-              <img src="./assest/images/trusted.png" alt="" />
-            </div>
-            <div class="Trusted_text">
-              <h6 class="text-center">Trusted by 1500+</h6>
-              <p class="text-center">satisfied customers</p>
-            </div>
-          </div>
-          <div
-            class="Trusted_card d-flex align-items-center justify-content-center flex-column"
-            data-aos="zoom-in"
-          >
-            <div class="Trusted_img">
-              <img src="./assest/images/quality.png" alt="" />
-            </div>
-            <div class="Trusted_text">
-              <h6 class="text-center">Offering 30+ Quality</h6>
-              <p class="text-center">assured top notch products</p>
-            </div>
-          </div>
-          <div
-            class="Trusted_card d-flex align-items-center justify-content-center flex-column"
-            data-aos="zoom-in"
-          >
-            <div class="Trusted_img">
-              <img src="./assest/images/Exp.png" alt="" />
-            </div>
-            <div class="Trusted_text">
-              <h6 class="text-center">2+ Years</h6>
-              <p class="text-center">of industry experience</p>
+        <div class="div">
+          <h2 class="heading pb-2">
+            Our Categories
+            <span class="line"></span>
+          </h2>
+          <p class="explore pb-2 px-2">
+            Let's explore our carefully curated top-quality products within
+            specific genres.
+          </p>
+        </div>
+        <div class="row mt-3 g-3">
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feb1.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Chair fabric</h3>
+              </div>
             </div>
           </div>
-          <div
-            class="Trusted_card d-flex align-items-center justify-content-center flex-column"
-            data-aos="fade-left"
-          >
-            <div class="Trusted_img">
-              <img src="./assest/images/solution.png" alt="" />
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feb3.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Net fabric</h3>
+              </div>
             </div>
-            <div class="Trusted_text">
-              <h6 class="text-center">Personalized</h6>
-              <p class="text-center">Solutions</p>
+          </div>
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feb2.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Intimate fabric</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feba2.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Chair fabric</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feb7.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Net fabric</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-6">
+            <div class="card">
+              <div class="card-image-container">
+                <img
+                  src="./assest/images/feb5.jpg"
+                  alt="Card image"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-name">Intimate fabric</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row g-0 hero-section">
+          <!-- Left Panel with Text -->
+          <div class="col-md-4 left-panel p-4">
+            <h1>We are Gratex — Where Quality Threads Meet Innovation</h1>
+            <p>
+              we blend tradition with technology to craft fabrics that define
+              excellence. Every thread we produce carries our commitment to
+              innovation, durability, and style.
+            </p>
+            <a href="./assest/images/pdf/Greatex-factory.pdf" target="_blank" class="image_btn">
+              <img src="./assest/images/pdf/compna.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-md-8 h-100">
+            <div class="row g-2">
+              <!-- Right Image -->
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">Modern Manufacturing Facility</h5>
+                    <p class="text-center">
+                      Precision-driven fabric production.
+                    </p>
+                  </div>
+                  <img
+                    src="./assest/images/company/H.jpg"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">Advanced Weaving Machines</h5>
+                    <p class="text-center">Where quality threads come alive.</p>
+                  </div>
+                  <img
+                    src="./assest/images/company/K.JPG"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">High-Speed Loom Operations</h5>
+                    <p class="text-center">
+                      Delivering excellence, thread by thread.
+                    </p>
+                  </div>
+                  <img
+                    src="./assest/images/company/I.jpg"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">Quality Control in Action</h5>
+                    <p class="text-center">
+                      Ensuring perfection at every stage.
+                    </p>
+                  </div>
+                  <img
+                    src="./assest/images/company/L.jpg"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">Dyeing & Finishing Unit</h5>
+                    <p class="text-center">Coloring fabrics with care</p>
+                  </div>
+                  <img
+                    src="./assest/images/company/Q.jpg"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="image-container d-flex align-items-center justify-content-center"
+                >
+                  <div class="commercial p-2 px-3">
+                    <h5 class="text-center">Packaging and Dispatch Area</h5>
+                    <p class="text-center">Ready to ship worldwide</p>
+                  </div>
+                  <img
+                    src="./assest/images/company/Performance.jpg"
+                    class="image_style"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -281,230 +628,297 @@
     </section>
     <section>
       <div class="container py-5">
-        <div class="div text-center">
-          <h2 class="heading pb-2">
-            Our Categories
-            <span class="line"></span>
-          </h2>
-          <p class="explore pb-4 px-2">
-            Let's explore our carefully curated top-quality products within
-            specific genres.
-          </p>
+        <div class="row py-5">
+          <div class="col-12 text-center">
+            <h2 class="heading">
+              Trending fabrics
+              <span class="line"></span>
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper card_slider_1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba1.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba3.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba4.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba5.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="card_slide d-flex align-items-center justify-content-center flex-column"
+                  >
+                    <div class="image_wrapper">
+                      <div class="slide_card_image">
+                        <img src="./assest/images/feba6.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div
+                      class="Discover_text d-flex justify-content-center align-items-center flex-column"
+                    >
+                      <h6 class="text-center mt-1 mb-0">
+                        Fabric name or code no.
+                      </h6>
+                      <p class="prise p-0 my-1 m-0">10000/per meter</p>
+                      <button class="btn_style slide_btn">
+                        Show More<i
+                          class="fas fa-long-arrow-alt-right ms-1"
+                          style="font-size: 10px"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider_btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <section class="gallery mt-4">
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/fabric1.jpg" alt="image" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb.jpeg" alt="image" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Chairs</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb1.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Garments</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb2.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Stalles</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb3.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Footwear</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb4.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb5.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feb6.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feba1.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feba2.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    View Details<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="image" data-aos="fade-up"
-          data-aos-duration="1000">
-            <img src="./assest/images/feba3.jpg" alt="" />
-            <div
-              class="overlay_image_text d-flex align-items-center justify-content-center flex-column p-4"
-            >
-              <h5>Febrics</h5>
-              <div class="">
-                <a href="product-details.html">
-                  <button class="btn_style card_btn">
-                    Chairs<i
-                      class="fas fa-long-arrow-alt-right ms-1"
-                      style="font-size: 10px"
-                    ></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
-    <section class="srevice mt-4">
+
+    <section class="Trusted_bg">
+      <div class="container">
+        <div class="col-12">
+          <div class="swiper card_slider_2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="fade-right"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/nature.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Nature Business</h6>
+                    <p class="text-center">
+                      Where sustainability meets style, our fabrics are crafted
+                      from nature’s finest fibers, bringing eco-friendly luxury
+                      to every thread.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="zoom-in"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/house.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Establishment</h6>
+                    <p class="text-center">
+                      In year of greatex fabrics. Founded with a passion for
+                      quality and innovation, our textile company is dedicated
+                      to weaving sustainable, high-quality fabrics that stand
+                      the test of time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="zoom-in"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/Personalized.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Personalized</h6>
+                    <p class="text-center">
+                      At our textile company, we specialize in personalized
+                      fabrics, tailored to meet your unique needs and bring your
+                      creative vision to life
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="fade-left"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/expi.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Year of Exprience</h6>
+                    <p class="text-center">
+                      With Over 50 Years of dedicated experience in the textile
+                      industry, we combine innovation and expertise to deliver
+                      fabrics that exceed expectations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="fade-left"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/premium.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Offering 30+ Quality</h6>
+                    <p class="text-center">
+                      Assured top-notch products. Crafted with precision and
+                      excellence, our textiles offer unmatched quality, luxury,
+                      and durability, setting the standard for premium fabrics
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="Trusted_card d-flex align-items-center justify-content-center flex-column"
+                  data-aos="fade-left"
+                >
+                  <div class="Trusted_img">
+                    <img src="./assest/images/trusted1.png" alt="" />
+                  </div>
+                  <div class="Trusted_text">
+                    <h6 class="text-center">Trusted by 1500+</h6>
+                    <p class="text-center">
+                      Trusted by over 1,500 clients, our textile company
+                      delivers exceptional quality and reliability, making us a
+                      leading choice in the industry
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="srevice mt-4">
       <div class="service_overlay"></div>
       <div class="container">
         <div class="row">
@@ -572,23 +986,25 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="Quality_bg mt-5">
+    </section> -->
+    <section class="Quality_bg">
       <div class="container">
         <div class="Quality-overlay"></div>
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-lg-9 pe-md-4 pe-3">
             <div class="Quality_text">
-              <p class="GLOBAL m-0 mb-2">WE’RE SERVICING A GLOBAL</p>
+              <p class="GLOBAL m-0 mb-2">WE’RE SERVICING A WORLD WIDE</p>
               <h3>
-                Provide You The Highest Quality Work That Meets Your
-                Expectation.
+                Provide you with the highest quality work that meets your
+                expectation
               </h3>
               <div class="mt-4">
-                <button class="btn_style">MORE PROJECT</button>
-                <button class="btn_style ms-sm-3 mt-sm-0 mt-3 ms-0">
-                  MORE SERVICES
-                </button>
+                <a href="contact.html">
+                  <button class="btn_style">
+                    <i class="fas fa-phone-alt"></i>
+                    Request to Call
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -597,21 +1013,148 @@
           >
             <div
               class="customer d-flex align-items-center justify-content-center flex-column"
+              onclick="openModal()"
             >
-              <div class="icon_img">
-                <img src="./assest/images/shirt.png" alt="" />
-              </div>
-              <div class="text_happy mt-3">
-                <p
-                  class="text-center m-0"
-                  style="font-size: 35px; font-weight: 600"
-                >
-                  299
-                </p>
-                <p class="text-center m-0">Happy Customer</p>
-              </div>
+              <img id="thumbnail" src="./assest/images/Screenshot.png" alt="" />
               <div class="qoverlay"></div>
             </div>
+
+            <div id="imageModal" class="modal" onclick="closeModal()">
+              <span class="close">&times;</span>
+              <img
+                id="modalImage"
+                src="./assest/images/Screenshot.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4 text-center">
+            <h2 class="heading text-center">
+              Our Clients
+              <span class="line"></span>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <article class="wrapper">
+            <div class="marquee">
+              <div class="marquee__group">
+                <img src="./assest/images/Adidas_logo-removebg-preview.png" />
+                <img
+                  src="./assest/images/samsonite-logo-removebg-preview.png"
+                />
+                <img src="./assest/images/campus-removebg-preview.png" />
+                <img src="./assest/images/spinneys-removebg-preview.png" />
+                <img src="./assest/images/reebok-removebg-preview.png" />
+                <img src="./assest/images/liberty-removebg-preview.png" />
+                <img src="./assest/images/Aimeera-removebg-preview.png" />
+                <img src="./assest/images/gaar-removebg-preview.png" />
+                <img src="./assest/images/dlf-removebg-preview.png" />
+                <img src="./assest/images/ritu-removebg-preview.png" />
+                <img src="./assest/images/godrej-removebg-preview.png" />
+                <img src="./assest/images/wildcraft-removebg-preview.png" />
+                <img src="./assest/images/Asics-removebg-preview.png" />
+                <img src="./assest/images/amazon-removebg-preview.png" />
+                <img src="./assest/images/wesiside.jpg" />
+                <img src="./assest/images/Zivame-Logo-removebg-preview.png" />
+                <img src="./assest/images/hummel-removebg-preview.png" />
+              </div>
+
+              <div aria-hidden="true" class="marquee__group">
+                <img src="./assest/images/Adidas_logo-removebg-preview.png" />
+                <img
+                  src="./assest/images/samsonite-logo-removebg-preview.png"
+                />
+                <img src="./assest/images/campus-removebg-preview.png" />
+                <img src="./assest/images/spinneys-removebg-preview.png" />
+                <img src="./assest/images/reebok-removebg-preview.png" />
+                <img src="./assest/images/liberty-removebg-preview.png" />
+                <img src="./assest/images/Aimeera-removebg-preview.png" />
+                <img src="./assest/images/gaar-removebg-preview.png" />
+                <img src="./assest/images/dlf-removebg-preview.png" />
+                <img src="./assest/images/ritu-removebg-preview.png" />
+                <img src="./assest/images/godrej-removebg-preview.png" />
+                <img src="./assest/images/wildcraft-removebg-preview.png" />
+                <img src="./assest/images/Asics-removebg-preview.png" />
+                <img src="./assest/images/amazon-removebg-preview.png" />
+                <img src="./assest/images/wesiside.jpg" />
+                <img src="./assest/images/Zivame-Logo-removebg-preview.png" />
+                <img src="./assest/images/hummel-removebg-preview.png" />
+              </div>
+            </div>
+
+            <!-- <div class="marquee mt-3 marquee--reverse">
+              <div class="marquee__group">
+                <img src="./assest/images/Adidas_logo-removebg-preview.png" />
+                <img src="./assest/images/samsonite-logo-removebg-preview.png" />
+                <img src="./assest/images/campus-removebg-preview.png" />
+                <img src="./assest/images/spinneys-removebg-preview.png" />
+                <img src="./assest/images/reebok-removebg-preview.png" />
+                <img src="./assest/images/liberty-removebg-preview.png" />
+                <img src="./assest/images/Aimeera-removebg-preview.png" />
+                <img src="./assest/images/gaar-removebg-preview.png" />
+                <img src="./assest/images/dlf-removebg-preview.png" />
+                <img src="./assest/images/ritu-removebg-preview.png" />
+                <img src="./assest/images/godrej-removebg-preview.png" />
+                <img src="./assest/images/wildcraft-removebg-preview.png" />
+                <img src="./assest/images/Asics-removebg-preview.png" />
+                <img src="./assest/images/amazon-removebg-preview.png" />
+                <img src="./assest/images/wesiside.jpg" />
+                <img src="./assest/images/Zivame-Logo-removebg-preview.png" />
+                <img src="./assest/images/hummel-removebg-preview.png" />
+              </div>
+          
+              <div aria-hidden="true" class="marquee__group">
+                <img src="./assest/images/Adidas_logo-removebg-preview.png" />
+                <img src="./assest/images/samsonite-logo-removebg-preview.png" />
+                <img src="./assest/images/campus-removebg-preview.png" />
+                <img src="./assest/images/spinneys-removebg-preview.png" />
+                <img src="./assest/images/reebok-removebg-preview.png" />
+                <img src="./assest/images/liberty-removebg-preview.png" />
+                <img src="./assest/images/Aimeera-removebg-preview.png" />
+                <img src="./assest/images/gaar-removebg-preview.png" />
+                <img src="./assest/images/dlf-removebg-preview.png" />
+                <img src="./assest/images/ritu-removebg-preview.png" />
+                <img src="./assest/images/godrej-removebg-preview.png" />
+                <img src="./assest/images/wildcraft-removebg-preview.png" />
+                <img src="./assest/images/Asics-removebg-preview.png" />
+                <img src="./assest/images/amazon-removebg-preview.png" />
+                <img src="./assest/images/wesiside.jpg" />
+                <img src="./assest/images/Zivame-Logo-removebg-preview.png" />
+                <img src="./assest/images/hummel-removebg-preview.png" />
+              </div>
+            </div> -->
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="banner_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 d-flex align-items-center">
+            <div class="Quality_text">
+              <h2 style="color: #fff">Where India Meets to</h2>
+              <h3>Bye and Sell,Everyday</h3>
+              <div class="mt-4">
+                <a
+                  href="https://www.indiamart.com/greatexsynthetics/?srsltid=AfmBOor5yzc5tSnoIHa-B0l0ldmqOZbeRkG-Oa4eeJjZHETao7CQqwRD"
+                  target="_blank"
+                >
+                  <div class="indiamart_logo">
+                    <img src="./assest/images/ind.png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="./assest/images/manshop.png" width="100%" alt="" />
           </div>
         </div>
       </div>
@@ -738,15 +1281,19 @@
                 <div>
                   <i class="fa-solid contact_loc fa-envelope me-2"></i>
                 </div>
-                <a href="" class="Greatex"
-                  >Email : greatexsynthetics@gmail.com</a
+                <a href="mailto:infogreatex@gmail.com" class="Greatex"
+                  >Email : infogreatex@gmail.com</a
                 >
               </div>
               <div class="mb-3 d-flex align-items-center">
                 <div>
                   <i class="fa-solid contact_loc fa-phone me-2"></i>
                 </div>
-                <a href="" class="Greatex">Tel : 0120-2696120</a>
+                <a
+                  href="https://wa.me/9220104048?text=Hello%20there!"
+                  class="Greatex"
+                  >Tel : 9220104048</a
+                >
               </div>
             </div>
           </div>
@@ -754,217 +1301,7 @@
       </div>
       <div class="con_bg"></div>
     </section>
-    <!-- <section>
-      <div class="container py-4">
-        <h2 class="heading">
-          Chairs
-          <span class="line"></span>
-        </h2>
-        <p class="m-0 p-0">Elevate every step with style & comfort</p>
-        <div class="row mt-3">
-          <div class="swiper card_slider_1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb2.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb3.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb4.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb5.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider_card_wrapper">
-                  <div class="card_image_wrapper">
-                    <a href="Product-Details.html">
-                      <img src="./assest/images/feb6.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class="card_text my-3">
-                    <p class="text-mute text-start p-0 pb-2 m-0">FB-6587</p>
-                    <div
-                      class="d-flex Star_wrap align-items-start justify-content-between"
-                    >
-                      <h5>GSM :</h5>
-                      <div class="">
-                        <a href="product-details.html">
-                          <button class="btn_style card_btn">
-                            Details<i
-                              class="fas fa-long-arrow-alt-right ms-1"
-                              style="font-size: 10px"
-                            ></i>
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badg">
-                    <div class="loader_wrapper">
-                      <span>100% Off</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider_btn">
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+
     <footer class="about_bg_color">
       <div class="container pt-5" style="position: relative; z-index: 1">
         <div class="row py-5 g-3">
@@ -1061,7 +1398,7 @@
       });
     </script>
     <script>
-      var swiper = new Swiper(".card_slider_1", {
+      var swiper = new Swiper(".card_slider_2", {
         slidesPerView: 1,
         spaceBetween: 10,
         loop: true,
@@ -1070,7 +1407,7 @@
           clickable: true,
         },
         autoplay: {
-          delay: 3000,
+          delay: 5000,
           disableOnInteraction: false,
         },
         navigation: {
@@ -1102,7 +1439,155 @@
       AOS.init({
         once: true,
       });
-      
     </script>
+    <script>
+      var swiper = new Swiper(".card_slider_1", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        // autoplay: {
+        //   delay: 7000,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1100: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+    <!-- whatsApp modal -->
+    <div class="whatApp">
+      <a href="https://wa.me/9220104048?text=Hello%20there!" target="_blank">
+        <span class="d-flex align-items-center"
+          ><i class="fa-brands fa-whatsapp me-2"></i> WhatsApp</span
+        >
+      </a>
+    </div>
+    <!-- whatsApp modal -->
+    <div class="app" data-bs-toggle="modal" data-bs-target="#mailModal">
+      <button>Get Appointment</button>
+    </div>
+    <!-- Vertically centered scrollable modal -->
+    <div
+      class="modal fade"
+      id="mailModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Get a <span style="color: #fc524c">Quick Quote</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-4">
+            <form action="javascript:void(0);">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="Nameinput" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=" Enate Name"
+                      id="Nameinput"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="phonenumberInput" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="+(245) 451 45123"
+                      id="phonenumberInput"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="emailidInput" class="form-label"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="@gamil.com"
+                      id="emailidInput"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="MeasurementUnits" class="form-label"
+                      >Message
+                    </label>
+                    <textarea
+                      name="message"
+                      cols="40"
+                      rows="4"
+                      class="wpcf7-form-control wpcf7-textarea form-control"
+                      aria-invalid="false"
+                      placeholder=" Your Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-12 my-3">
+                  <div class="text-end">
+                    <button
+                      class="btn_style"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <i class="fas fa-question-circle"></i>
+
+                      Send Enquiry
+                    </button>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

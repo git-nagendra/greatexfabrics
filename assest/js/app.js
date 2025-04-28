@@ -138,3 +138,93 @@ window.addEventListener("scroll", function () {
 //       behavior: 'smooth'
 //     });
 //   }
+document.addEventListener("DOMContentLoaded",function(){
+  document.getElementById("toggleButton").addEventListener("click", function() {
+    document.getElementById("myElement").classList.toggle("share");
+  });
+})
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let slider = document.querySelector(".logo-slider");
+  let slide = document.querySelector(".logos-slide");
+
+  // Duplicate the logos-slide content dynamically
+  let duplicate = slide.cloneNode(true);
+  slider.appendChild(duplicate);
+});
+
+
+/*
+ JS to toggle scroll axis styles
+*/
+// const control = document.getElementById("direction-toggle");
+// const marquees = document.querySelectorAll(".marquee");
+// const wrapper = document.querySelector(".wrapper");
+
+// control.addEventListener("click", () => {
+//   control.classList.toggle("toggle--vertical");
+//   wrapper.classList.toggle("wrapper--vertical");
+//   [...marquees].forEach((marquee) =>
+//     marquee.classList.toggle("marquee--vertical")
+//   );
+// });
+
+function openModal() {
+  document.getElementById('imageModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("popupModal");
+  const modalImg = document.getElementById("popupImg");
+  const closeBtn = document.querySelector(".popup-close");
+
+  // Handle image click on ALL sliders
+  document.querySelectorAll(".popup-image").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", e => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+
+document.getElementById('downloadBtn').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = './assest/images/pdf/Greatex-factory.pdf'; // PDF file path
+  link.download = 'Greatex-factory.pdf'; // Optional: custom file name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
