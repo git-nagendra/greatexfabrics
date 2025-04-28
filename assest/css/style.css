@@ -1627,7 +1627,7 @@ padding: 5rem 0;
     top: 0;
     left: -100%;
     z-index: 999;
-    width: 70%;
+    width: 75%;
     height: 100vh;
     background: #02173b;
     padding: 15px 20px;
@@ -1635,6 +1635,9 @@ padding: 5rem 0;
     z-index: 99;
     overflow-y: scroll;
   }
+ nav ul {
+  border: 2px solid red;
+ }
 
   .menu_wrapper .active {
     display: flex !important;
@@ -1650,7 +1653,7 @@ padding: 5rem 0;
     display: none !important;
   }
 
-  .submenu_wrapper {
+  /* .submenu_wrapper {
     position: initial;
     top: 56px;
     left: -5px;
@@ -1664,11 +1667,14 @@ padding: 5rem 0;
     flex-direction: column;
     display: none;
     background: initial;
-  }
+  } */
+ 
   .Shoe{
     width: 100% !important; 
   }
-
+  nav ul li:nth-child(1){
+    display: none;
+  }
   nav ul {
     display: flex;
     flex-direction: column;
