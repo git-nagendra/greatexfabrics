@@ -1,230 +1,173 @@
-const ham =document.querySelector('.ham');
-const nav =document.querySelector('nav');
-ham.addEventListener('click', ()=>{
-    ham.classList.toggle('transform')
-    nav.classList.toggle('mobile')
-})
-const menu = document.querySelectorAll('.menu_wrapper');
-console.log(menu);
-const submenu = document.querySelectorAll('.submenu_wrapper');
-console.log(submenu);
+// Main script.js
 
-menu.forEach((element, index) => {
-  element.addEventListener('click', function() {
-    // submenu.forEach(subEl => {
-    //   subEl.classList.remove('active');
-    // });
-    submenu[index].classList.toggle('active');
-  });
-});
-const colorPick = document.querySelectorAll('.color_option');
+// === Hamburger Menu Toggle ===
+const ham = document.querySelector('.ham');
+const nav = document.querySelector('nav');
 
-colorPick.forEach(element => {
-  element.addEventListener('click', () => {
-    colorPick.forEach(el => el.classList.remove('active')); 
-    element.classList.add('active');
+if (ham && nav) {
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('transform');
+    nav.classList.toggle('mobile');
+  });
+}
+
+// === Menu & Submenu Toggle ===
+const menus = document.querySelectorAll('.menu_wrapper');
+const submenus = document.querySelectorAll('.submenu_wrapper');
+
+menus.forEach((menu, index) => {
+  menu.addEventListener('click', () => {
+    submenus[index]?.classList.toggle('active');
   });
 });
-const size = document.querySelectorAll('.size');
-size.forEach(element => {
-  element.addEventListener('click', () => {
-    size.forEach(el => el.classList.remove('active')); 
-    element.classList.add('active');
+
+// === Color Picker Active Toggle ===
+const colorOptions = document.querySelectorAll('.color_option');
+
+colorOptions.forEach(option => {
+  option.addEventListener('click', () => {
+    colorOptions.forEach(el => el.classList.remove('active'));
+    option.classList.add('active');
   });
 });
-// script.js
-window.onload = function() {
-  magnify("myimage", 2);
-};
+
+// === Size Selector Active Toggle ===
+const sizes = document.querySelectorAll('.size');
+
+sizes.forEach(size => {
+  size.addEventListener('click', () => {
+    sizes.forEach(el => el.classList.remove('active'));
+    size.classList.add('active');
+  });
+});
+
+// === Image Magnifier on Load ===
+window.addEventListener('load', () => {
+  magnify('myimage', 2);
+});
 
 function magnify(imgID, zoom) {
-  var img, glass, w, h, bw;
-  img = document.getElementById(imgID);
+  const img = document.getElementById(imgID);
+  if (!img) return;
 
-  /* Create magnifier glass: */
-  glass = document.createElement("DIV");
-  glass.setAttribute("class", "img-magnifier-glass");
-
-  /* Insert magnifier glass: */
+  const glass = document.createElement('div');
+  glass.className = 'img-magnifier-glass';
   img.parentElement.insertBefore(glass, img);
 
-  /* Set background properties for the magnifier glass: */
-  glass.style.backgroundImage = "url('" + img.src + "')";
-  glass.style.backgroundRepeat = "no-repeat";
-  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-  bw = 3;
-  w = glass.offsetWidth / 2;
-  h = glass.offsetHeight / 2;
+  glass.style.backgroundImage = `url('${img.src}')`;
+  glass.style.backgroundRepeat = 'no-repeat';
+  glass.style.backgroundSize = `${img.width * zoom}px ${img.height * zoom}px`;
 
-  /* Execute a function when someone moves the magnifier glass over the image: */
-  glass.addEventListener("mousemove", moveMagnifier);
-  img.addEventListener("mousemove", moveMagnifier);
-
-  /* Also work on touch screens: */
-  glass.addEventListener("touchmove", moveMagnifier);
-  img.addEventListener("touchmove", moveMagnifier);
+  const bw = 3;
+  const w = glass.offsetWidth / 2;
+  const h = glass.offsetHeight / 2;
 
   function moveMagnifier(e) {
-      var pos, x, y;
-      /* Prevent any other actions that may occur when moving over the image: */
-      e.preventDefault();
-      /* Get the cursor's x and y positions: */
-      pos = getCursorPos(e);
-      x = pos.x;
-      y = pos.y;
-      /* Prevent the magnifier glass from being positioned outside the image: */
-      if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
-      if (x < w / zoom) { x = w / zoom; }
-      if (y > img.height - (h / zoom)) { y = img.height - (h / zoom); }
-      if (y < h / zoom) { y = h / zoom; }
-      /* Set the position of the magnifier glass: */
-      glass.style.left = (x - w) + "px";
-      glass.style.top = (y - h) + "px";
-      /* Display what the magnifier glass "sees": */
-      glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-      glass.style.display = "block"; // Show the glass when moving
+    e.preventDefault();
+    const pos = getCursorPos(e);
+    let x = pos.x;
+    let y = pos.y;
+
+    if (x > img.width - w / zoom) x = img.width - w / zoom;
+    if (x < w / zoom) x = w / zoom;
+    if (y > img.height - h / zoom) y = img.height - h / zoom;
+    if (y < h / zoom) y = h / zoom;
+
+    glass.style.left = `${x - w}px`;
+    glass.style.top = `${y - h}px`;
+    glass.style.backgroundPosition = `-${(x * zoom) - w + bw}px -${(y * zoom) - h + bw}px`;
+    glass.style.display = 'block';
   }
 
   function getCursorPos(e) {
-      var a, x = 0, y = 0;
-      e = e || window.event;
-      /* Get the x and y positions of the image: */
-      a = img.getBoundingClientRect();
-      /* Calculate the cursor's x and y coordinates, relative to the image: */
-      x = e.pageX - a.left;
-      y = e.pageY - a.top;
-      /* Consider any page scrolling: */
-      x = x - window.pageXOffset;
-      y = y - window.pageYOffset;
-      return { x: x, y: y };
+    e = e || window.event;
+    const a = img.getBoundingClientRect();
+    const x = e.pageX - a.left - window.pageXOffset;
+    const y = e.pageY - a.top - window.pageYOffset;
+    return { x, y };
   }
+
+  glass.addEventListener('mousemove', moveMagnifier);
+  img.addEventListener('mousemove', moveMagnifier);
+  glass.addEventListener('touchmove', moveMagnifier);
+  img.addEventListener('touchmove', moveMagnifier);
 }
 
+// === Sticky Header on Scroll ===
+const header = document.querySelector('.header');
+const scrollText = document.querySelector('.scroll_text');
 
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
 
-
-
-
-
-
-
-
-
-
-const sticky =document.querySelector('.header');
-window.addEventListener("scroll", function () {
-  var scrollTop = window.scrollY;
-  if (scrollTop > 40) {
-    sticky.classList.add('sticky');
+  if (header) {
+    header.classList.toggle('sticky', scrollTop > 40);
   }
-  else{
-    sticky.classList.remove('sticky');
-  }
-  const text = document.querySelector('.scroll_text');
-  if (text) {
-    const val = window.scrollY / 5;
-    text.style.transform = `translateX(${val}px)`;
+
+  if (scrollText) {
+    scrollText.style.transform = `translateX(${scrollTop / 5}px)`;
   }
 });
 
+// === Toggle Share Modal ===
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('toggleButton');
+  const myElement = document.getElementById('myElement');
 
-
-
-
-
-// function scroll() {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth'
-//     });
-//   }
-document.addEventListener("DOMContentLoaded",function(){
-  document.getElementById("toggleButton").addEventListener("click", function() {
-    document.getElementById("myElement").classList.toggle("share");
-  });
-})
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  let slider = document.querySelector(".logo-slider");
-  let slide = document.querySelector(".logos-slide");
-
-  // Duplicate the logos-slide content dynamically
-  let duplicate = slide.cloneNode(true);
-  slider.appendChild(duplicate);
-});
-
-
-/*
- JS to toggle scroll axis styles
-*/
-// const control = document.getElementById("direction-toggle");
-// const marquees = document.querySelectorAll(".marquee");
-// const wrapper = document.querySelector(".wrapper");
-
-// control.addEventListener("click", () => {
-//   control.classList.toggle("toggle--vertical");
-//   wrapper.classList.toggle("wrapper--vertical");
-//   [...marquees].forEach((marquee) =>
-//     marquee.classList.toggle("marquee--vertical")
-//   );
-// });
-
-function openModal() {
-  document.getElementById('imageModal').style.display = 'flex';
-}
-
-function closeModal() {
-  document.getElementById('imageModal').style.display = 'none';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("popupModal");
-  const modalImg = document.getElementById("popupImg");
-  const closeBtn = document.querySelector(".popup-close");
-
-  // Handle image click on ALL sliders
-  document.querySelectorAll(".popup-image").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "flex";
-      modalImg.src = img.src;
+  if (toggleButton && myElement) {
+    toggleButton.addEventListener('click', () => {
+      myElement.classList.toggle('share');
     });
-  });
-
-  // Close modal
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  modal.addEventListener("click", e => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+  }
 });
 
+// === Duplicate Logo Slider Content ===
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.logo-slider');
+  const slide = document.querySelector('.logos-slide');
 
-document.getElementById('downloadBtn').addEventListener('click', function() {
-  const link = document.createElement('a');
-  link.href = './assest/images/pdf/Greatex-factory.pdf'; // PDF file path
-  link.download = 'Greatex-factory.pdf'; // Optional: custom file name
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  if (slider && slide) {
+    const duplicate = slide.cloneNode(true);
+    slider.appendChild(duplicate);
+  }
 });
+
+// === Popup Modal for Images ===
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('popupModal');
+  const modalImg = document.getElementById('popupImg');
+  const closeBtn = document.querySelector('.popup-close');
+
+  if (modal && modalImg && closeBtn) {
+    document.querySelectorAll('.popup-image').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+});
+
+// === Download PDF on Button Click ===
+const downloadBtn = document.getElementById('downloadBtn');
+
+if (downloadBtn) {
+  downloadBtn.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = './assest/images/pdf/Greatex-factory.pdf';
+    link.download = 'Greatex-factory.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+}
