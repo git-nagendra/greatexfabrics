@@ -1,0 +1,32 @@
+
+.popup-modal-a {
+    display: none;
+    position: fixed;
+    z-index:9999;
+    left: 0;
+    top: -25px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .popup-modal img {
+    max-width: 90%;
+    max-height: 80%;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popup-image {
+    cursor: zoom-in;
+  }
