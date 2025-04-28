@@ -1756,6 +1756,13 @@ padding: 5rem 0;
     font-size: 30px;
     line-height: 41px;
 }
+.saleswoman {
+  height: 400px;
+}
+.crop {
+  height: 215px;
+  width: 248px;
+}
 }
 
 
