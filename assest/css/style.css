@@ -1635,10 +1635,7 @@ padding: 5rem 0;
     z-index: 99;
     overflow-y: scroll;
   }
- nav ul {
-  border: 2px solid red;
- }
-
+ 
   .menu_wrapper .active {
     display: flex !important;
   }
@@ -1672,9 +1669,7 @@ padding: 5rem 0;
   .Shoe{
     width: 100% !important; 
   }
-  nav ul li:nth-child(1){
-    display: none;
-  }
+  
   nav ul {
     display: flex;
     flex-direction: column;
@@ -1739,6 +1734,9 @@ padding: 5rem 0;
   .indiamart_logo {
     height: 70px;
     width: 300px;
+}
+.elementor-widget-container h6 {
+  margin-top: 34px;
 }
 }
 @media only screen and (max-width: 558px) {
