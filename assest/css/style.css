@@ -217,6 +217,7 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
 }
+
 .swiper-wrappe1,
 .fix_height,
 .detail_slider1 {
@@ -1737,6 +1738,12 @@ padding: 5rem 0;
 }
 .elementor-widget-container h6 {
   margin-top: 34px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: initial !important;
+  height: 29vh !important;
 }
 }
 @media only screen and (max-width: 558px) {
